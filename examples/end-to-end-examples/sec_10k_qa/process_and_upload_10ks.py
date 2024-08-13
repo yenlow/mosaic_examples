@@ -83,8 +83,7 @@ def main(folder_for_upload: str, dataset_subset: str):
             'JanosAudran/financial-reports-sec',
             dataset_subset,
             num_proc=num_cpus,
-            split=split,
-            trust_remote_code=True
+            split=split
         )
 
         # Remove a large, unused column
