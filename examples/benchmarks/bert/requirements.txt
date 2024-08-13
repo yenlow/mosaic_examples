@@ -1,4 +1,4 @@
-mosaicml[nlp,wandb,mlflow]
+mosaicml[all]
 mosaicml-streaming
 einops
 torch
