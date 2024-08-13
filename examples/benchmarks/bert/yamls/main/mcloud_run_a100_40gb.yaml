@@ -138,10 +138,10 @@ parameters:
   #     project:      # Fill this in
   #     entity:      # Fill this in
 
-  loggers:
-    mlflow:
-      tracking_uri: databricks
-      experiment_name: /Workspace/Users/srijit.nair@databricks.com/mlflow_experiments/bert_pretraining
+  #loggers:
+  #  mlflow:
+  #    tracking_uri: databricks
+  #    experiment_name: /Workspace/Users/srijit.nair@databricks.com/mlflow_experiments/bert_pretraining
 
   #(Optional) Checkpoint to local filesystem or remote object store
   save_interval: 3500ba
