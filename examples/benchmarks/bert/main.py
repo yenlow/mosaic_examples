@@ -12,7 +12,7 @@ import src.hf_bert as hf_bert_module
 import src.mosaic_bert as mosaic_bert_module
 import src.text_data as text_data_module
 from composer import Trainer, algorithms
-from composer.callbacks import (HealthChecker, LRMonitor, MemoryMonitor,
+from composer.callbacks import ( LRMonitor, MemoryMonitor,
                                 OptimizerMonitor, RuntimeEstimator,
                                 SpeedMonitor)
 from composer.loggers import WandBLogger, MLFlowLogger
@@ -92,8 +92,8 @@ def build_callback(name, kwargs):
     elif name == 'optimizer_monitor':
         return OptimizerMonitor(log_optimizer_metrics=kwargs.get(
             'log_optimizer_metrics', True),)
-    elif name == 'health_checker':
-        return HealthChecker(**kwargs)
+    #elif name == 'health_checker':
+    #    return HealthChecker(**kwargs)
     else:
         raise ValueError(f'Not sure how to build callback: {name}')
 
