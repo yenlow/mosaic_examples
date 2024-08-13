@@ -82,9 +82,10 @@ def main(folder_for_upload: str, dataset_subset: str):
         sec_filing_data = datasets.load_dataset(
             'JanosAudran/financial-reports-sec',
             dataset_subset,
-            trust_remote_code=True,
             num_proc=num_cpus,
-            split=split)
+            split=split,
+            trust_remote_code=True
+        )
 
         # Remove a large, unused column
         sec_filing_data.remove_columns(['returns'])

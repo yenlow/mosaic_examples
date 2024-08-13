@@ -21,8 +21,6 @@ integrations:
 command: |
   cd /workspace/examples/examples/end-to-end-examples/sec_10k_qa
   pip install -r requirements.txt
-  pip install -U datasets composer[nlp,streaming,wandb,mlflow]>=0.15.0
-  tail -f /dev/null
   python process_and_upload_10ks.py \
     --folder_for_upload s3://yenlow/mosaicml/sec_10k_demo/data/sec-10ks-large/ \
     --dataset_subset large_full
