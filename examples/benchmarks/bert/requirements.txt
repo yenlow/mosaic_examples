@@ -7,3 +7,4 @@ omegaconf
 transformers
 # need a newer version of triton
 triton
+mlflow
