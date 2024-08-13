@@ -82,6 +82,7 @@ def main(folder_for_upload: str, dataset_subset: str):
         sec_filing_data = datasets.load_dataset(
             'JanosAudran/financial-reports-sec',
             dataset_subset,
+            trust_remote_code=True,
             num_proc=num_cpus,
             split=split)
 
