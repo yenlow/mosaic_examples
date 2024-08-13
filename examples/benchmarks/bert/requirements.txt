@@ -1,5 +1,4 @@
-mosaicml
-mosaicml[all]
+mosaicml==0.23.5
 mosaicml-streaming
 einops
 torch
