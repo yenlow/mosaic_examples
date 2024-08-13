@@ -1,3 +1,4 @@
+mosaicml
 mosaicml[all]
 mosaicml-streaming
 einops
