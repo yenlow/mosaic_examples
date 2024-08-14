@@ -21,7 +21,6 @@ integrations:
 command: |
   cd /workspace/examples/examples/end-to-end-examples/sec_10k_qa
   pip install -r requirements.txt
-  pip freeze
   tail -f /dev/null
 #  python process_and_upload_10ks.py \
 #    --folder_for_upload s3://yenlow/mosaicml/sec_10k_demo/data/sec-10ks-large/ \
