@@ -22,6 +22,7 @@ integrations:
 # cd into the llm-foundry/scripts directory and run the train.py script
 command: |
   cd llm-foundry/scripts
+  tail -f /dev/null
   # composer train/train.py /mnt/config/parameters.yaml
 
 image: mosaicml/pytorch:1.13.1_cu117-python3.10-ubuntu20.04 # Use the Docker image provided by MosaicML
