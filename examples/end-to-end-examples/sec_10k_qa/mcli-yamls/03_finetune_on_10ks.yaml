@@ -22,7 +22,6 @@ integrations:
 # cd into the llm-foundry/scripts directory and run the train.py script
 command: |
   pip install -e llm-foundry[gpu]
-#  pip install -U flash_attn transformers
   cd llm-foundry/scripts
   tail -f /dev/null
   # composer train/train.py /mnt/config/parameters.yaml
