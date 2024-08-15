@@ -12,7 +12,7 @@ integrations:
 - integration_type: git_repo
   git_repo: mosaicml/llm-foundry
   git_commit: v0.2.0
-  pip_install: -e .[gpu]
+#  pip_install: -e .[gpu]
   ssh_clone: false # Should be true if using a private repo
 # Uncomment and fill in to log to WandB. Also uncomment the loggers section near the bottom of the yaml
 # - integration_type: wandb
@@ -21,6 +21,8 @@ integrations:
 
 # cd into the llm-foundry/scripts directory and run the train.py script
 command: |
+  pip install -e llm-foundry[gpu]
+#  pip install -U flash_attn transformers
   cd llm-foundry/scripts
   tail -f /dev/null
   # composer train/train.py /mnt/config/parameters.yaml
